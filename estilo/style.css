@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'pokemon';
+    src: url('../fontes/Hollow.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'sub';
+    src: url('../fontes/Classic.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #0511f2;
+    --cor1: #162d59;
+    --cor2: #2c7abf;
+    --cor3: #f2b705;
+    --cor4: #bf9004;
+
+    --fonte-padrao: Arial, Helvetica, Verdana, sans-serif;
+    --fonte-titulo: 'pokemon', 'cursive';
+    --fonte-sub: 'sub', 'cursive';
+
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f2b705a9;
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-titulo);
+    margin-top: -20px;
+    margin-bottom: 10px;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-sub);
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.555);
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.589);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1020px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor1);
+    font-family: var(--fonte-sub);
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+main h2 {
+    color: var(--cor1);
+    font-family: var(--fonte-sub);
+    font-size: 1.25em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 15px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2c7abfa1;
+    color: var(--cor1);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main img.red {
+    margin-bottom: 13px;
+}
+
+div.video {
+    background-color: var(--cor1);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 60%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #f2b70586;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.459);
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte-sub);
+    font-weight: normal;
+    font-size: 1em;
+}
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
